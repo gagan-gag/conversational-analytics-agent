@@ -144,7 +144,7 @@ https://console.groq.com
 # 🔧 Backend Setup
 
 ```powershell
-cd f:\Gagan\PROJECTS\Sage\conversational-analytics-agent\backend
+cd backend
 
 python -m venv .venv
 
@@ -215,7 +215,7 @@ Keep this terminal running.
 Open another terminal.
 
 ```powershell
-cd f:\Gagan\PROJECTS\Sage\conversational-analytics-agent\frontend
+cd frontend
 
 npm install
 
