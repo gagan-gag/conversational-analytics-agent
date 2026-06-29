@@ -1,0 +1,43 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Environment ───────────────────────────────────────────────────────────────
+.env
+*.env.local
+
+# ── Data / DB ─────────────────────────────────────────────────────────────────
+data/chroma/
+data/analytics.db
+*.db
+*.sqlite
+
+# ── Eval results ──────────────────────────────────────────────────────────────
+eval_results.json
+
+# ── Node ──────────────────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Virtual envs ─────────────────────────────────────────────────────────────
+venv/
+.venv/
+env/

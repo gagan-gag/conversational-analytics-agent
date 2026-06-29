@@ -1,0 +1,21 @@
+customer_id,name,email,plan,region,mrr_usd,status,signup_date,churn_date
+C001,Acme Corp,billing@acme.com,Pro,North America,499,active,2024-01-15,
+C002,Bright Ideas Ltd,accounts@brightideas.co.uk,Starter,Europe,99,active,2024-02-01,
+C003,Nova Tech,finance@novatech.io,Enterprise,Asia Pacific,1999,active,2024-01-05,
+C004,Summit Analytics,hello@summitanalytics.com,Pro,North America,499,churned,2023-11-10,2024-04-30
+C005,BlueWave Media,billing@bluewave.media,Starter,Latin America,99,active,2024-03-22,
+C006,Crestline Partners,ap@crestline.com,Enterprise,North America,1999,active,2023-09-01,
+C007,Zenith Software,invoices@zenith.dev,Pro,Europe,499,active,2024-02-14,
+C008,Redwood Retail,ops@redwoodretail.com,Starter,North America,99,churned,2024-01-20,2024-05-15
+C009,Quantum Dynamics,finance@quantumdyn.com,Enterprise,Asia Pacific,1999,active,2023-12-01,
+C010,Pinebrook Studios,billing@pinebrook.studio,Pro,North America,499,active,2024-04-10,
+C011,Cascade Health,accounts@cascadehealth.org,Starter,North America,99,active,2024-03-05,
+C012,Orbit Logistics,billing@orbitlogistics.com,Pro,Europe,499,churned,2024-01-01,2024-06-01
+C013,Solstice Finance,finance@solsticefin.com,Enterprise,North America,1999,active,2023-08-15,
+C014,Meridian Data,hello@meridiandata.io,Starter,Asia Pacific,99,active,2024-05-01,
+C015,Foxridge Consulting,ap@foxridge.co,Pro,Europe,499,active,2024-02-28,
+C016,Tidewater Energy,billing@tidewaterenergy.com,Enterprise,North America,1999,active,2024-01-12,
+C017,Maplesoft Inc,finance@maplesoft.ca,Starter,North America,99,churned,2024-02-10,2024-05-01
+C018,Ironclad Security,accounts@ironclad.sec,Pro,Europe,499,active,2024-03-18,
+C019,Cloudpeak AI,billing@cloudpeak.ai,Enterprise,North America,1999,active,2024-04-01,
+C020,Riverview Labs,hello@riverviewlabs.com,Starter,Latin America,99,active,2024-05-20,

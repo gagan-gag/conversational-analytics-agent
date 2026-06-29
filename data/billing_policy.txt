@@ -1,0 +1,108 @@
+SAGA PLATFORM — REFUND & BILLING POLICY
+Version 2.1 | Effective Date: 1 January 2025
+==============================================
+
+1. OVERVIEW
+-----------
+This document describes the billing practices, refund eligibility, and dispute
+resolution procedures for all subscription plans offered on the SAGA platform
+(Starter, Pro, and Enterprise).  By subscribing to any SAGA plan you agree to
+the terms outlined below.
+
+
+2. SUBSCRIPTION PLANS
+---------------------
+SAGA offers three tiers of service:
+
+  a) Starter Plan — $99 / month
+     Includes up to 5 users, 1 GB document storage, and 500 AI queries / month.
+     Billed monthly. No annual discount available on this tier.
+
+  b) Pro Plan — $499 / month
+     Includes up to 25 users, 10 GB document storage, and unlimited AI queries.
+     Available monthly or annually (20 % discount on annual pre-pay).
+
+  c) Enterprise Plan — $1,999 / month
+     Includes unlimited users, 100 GB document storage, dedicated support, and
+     custom SLA.  Annual billing only.  Custom pricing available for > 500 seats.
+
+All prices are in USD and exclude applicable taxes.
+
+
+3. BILLING CYCLE & PAYMENT
+--------------------------
+  • Monthly plans are billed on the same calendar day each month (the
+    "billing anniversary").
+  • Annual plans are billed upfront on the subscription start date.
+  • Accepted payment methods: major credit / debit cards, ACH bank transfer
+    (US only), and bank wire (Enterprise only).
+  • Invoices are emailed to the billing contact within 24 hours of each charge.
+  • Overdue invoices accrue a 1.5 % monthly late fee after a 10-day grace period.
+
+
+4. REFUND POLICY
+----------------
+  4.1 30-Day Money-Back Guarantee
+      New subscribers on the Starter or Pro plan may request a full refund
+      within 30 calendar days of their FIRST subscription charge.  To qualify:
+        – The account must not have exceeded 100 AI queries during the trial
+          period.
+        – The refund request must be submitted via the Billing portal or by
+          emailing billing@saga-platform.io.
+        – Refunds are processed within 5–10 business days to the original
+          payment method.
+
+  4.2 Pro-Rata Refunds (Annual Plans)
+      If an annual Pro or Enterprise subscriber cancels mid-term, SAGA will
+      issue a pro-rata credit for the unused full months remaining.  Partial
+      months are not refunded.  Credits are applied to the account balance and
+      may be used toward a future subscription; they are not issued as cash.
+
+  4.3 Non-Refundable Items
+      The following are non-refundable under all circumstances:
+        – Add-on purchases (extra storage blocks, additional seats bought
+          mid-cycle).
+        – Overage charges incurred beyond plan limits.
+        – Setup and onboarding fees for Enterprise accounts.
+        – Any subscription period beyond 30 days from first charge (monthly
+          plans).
+
+  4.4 Enterprise Refunds
+      Enterprise refund requests are handled individually by the Enterprise
+      Customer Success team and are subject to the terms agreed in the Master
+      Subscription Agreement (MSA).
+
+
+5. CANCELLATION
+---------------
+  • Subscribers may cancel at any time through Settings → Billing → Cancel Plan.
+  • Cancellation takes effect at the END of the current billing period; access
+    is retained until then.
+  • Data is retained for 30 days post-cancellation, after which it is
+    permanently deleted.  Export your data before cancelling.
+
+
+6. DISPUTE RESOLUTION
+---------------------
+  If you believe a charge is incorrect:
+    1. Contact billing@saga-platform.io within 60 days of the charge date.
+    2. Include your account ID, the invoice number, and a description of the
+       discrepancy.
+    3. Our billing team will investigate and respond within 3 business days.
+  Chargebacks initiated without first contacting SAGA may result in account
+  suspension pending resolution.
+
+
+7. PLAN CHANGES (UPGRADES / DOWNGRADES)
+----------------------------------------
+  • Upgrading mid-cycle: the price difference is charged immediately on a
+    pro-rata basis; the new plan takes effect immediately.
+  • Downgrading mid-cycle: the change takes effect at the next billing
+    anniversary; no partial credit is issued for the remaining days.
+
+
+8. CONTACT
+----------
+  Billing inquiries:   billing@saga-platform.io
+  Support portal:      https://support.saga-platform.io
+  Phone (Enterprise):  +1 (800) 555-0199  (Mon–Fri 09:00–18:00 ET)

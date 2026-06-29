@@ -1,0 +1,109 @@
+/* SourceChips.css */
+
+/* ── Container ───────────────────────────────────────────────────────────── */
+.source-chips-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── Header label ────────────────────────────────────────────────────────── */
+.source-chips-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.source-chips-icon { font-size: 12px; }
+
+/* ── Chip row ─────────────────────────────────────────────────────────────── */
+.source-chips-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ── Individual chip wrapper ─────────────────────────────────────────────── */
+.source-chip-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ── Chip button ─────────────────────────────────────────────────────────── */
+.source-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px 5px 8px;
+  background: rgba(59,130,246,0.08);
+  border: 1px solid rgba(59,130,246,0.2);
+  border-radius: 20px;
+  color: var(--badge-rag-text);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  align-self: flex-start;
+  max-width: 100%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.source-chip:hover {
+  background: rgba(59,130,246,0.16);
+  border-color: rgba(59,130,246,0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59,130,246,0.15);
+}
+
+.source-chip--open {
+  background: rgba(59,130,246,0.18);
+  border-color: rgba(59,130,246,0.45);
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.12);
+}
+
+.source-chip-icon { font-size: 12px; flex-shrink: 0; }
+.source-chip-label { flex: 1; overflow: hidden; text-overflow: ellipsis; }
+.source-chip-caret { font-size: 8px; color: var(--text-muted); flex-shrink: 0; }
+
+/* ── Expanded snippet panel ──────────────────────────────────────────────── */
+.source-snippet {
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(59,130,246,0.15);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--accent-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.source-snippet-meta {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--badge-rag-text);
+}
+
+.source-snippet-meta span {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.source-snippet-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  white-space: pre-wrap;
+  word-break: break-word;
+}

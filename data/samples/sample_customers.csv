@@ -1,0 +1,21 @@
+customer_id,name,email,plan,status,signup_date,mrr,country,churn_date
+C001,Alice Johnson,alice.johnson@email.com,Pro,active,2023-01-15,99.00,USA,
+C002,Bob Smith,bob.smith@email.com,Starter,active,2023-02-20,29.00,UK,
+C003,Carol White,carol.white@email.com,Enterprise,active,2023-01-05,499.00,Canada,
+C004,David Brown,david.brown@email.com,Pro,churned,2023-03-10,99.00,USA,2024-01-10
+C005,Emma Davis,emma.davis@email.com,Starter,active,2023-04-18,29.00,Australia,
+C006,Frank Miller,frank.miller@email.com,Pro,active,2023-05-22,99.00,Germany,
+C007,Grace Wilson,grace.wilson@email.com,Enterprise,active,2023-02-28,499.00,France,
+C008,Henry Moore,henry.moore@email.com,Starter,churned,2023-06-01,29.00,India,2024-02-15
+C009,Isabella Taylor,isabella.taylor@email.com,Pro,active,2023-07-14,99.00,Brazil,
+C010,James Anderson,james.anderson@email.com,Enterprise,active,2023-08-09,499.00,USA,
+C011,Karen Thomas,karen.thomas@email.com,Starter,active,2023-09-25,29.00,Mexico,
+C012,Liam Jackson,liam.jackson@email.com,Pro,churned,2023-10-03,99.00,Spain,2024-03-01
+C013,Mia Harris,mia.harris@email.com,Pro,active,2023-11-17,99.00,Italy,
+C014,Noah Martin,noah.martin@email.com,Enterprise,active,2023-12-05,499.00,Japan,
+C015,Olivia Garcia,olivia.garcia@email.com,Starter,active,2024-01-20,29.00,South Korea,
+C016,Peter Martinez,peter.martinez@email.com,Pro,active,2024-02-14,99.00,Netherlands,
+C017,Quinn Robinson,quinn.robinson@email.com,Enterprise,active,2024-03-08,499.00,Sweden,
+C018,Rachel Clark,rachel.clark@email.com,Starter,churned,2024-01-11,29.00,Norway,2024-04-20
+C019,Samuel Lewis,samuel.lewis@email.com,Pro,active,2024-04-01,99.00,Denmark,
+C020,Tina Lee,tina.lee@email.com,Enterprise,active,2024-05-15,499.00,Singapore,
