@@ -1,57 +1,161 @@
 ````markdown
+<div align="center">
+
 # 🧠 Conversational Analytics Agent
 
-An AI assistant that lets you chat with your **documents** and **database** in plain English.
+**An AI-powered analytics assistant that lets you chat with your documents and database using natural language.**
 
-Ask it anything—the assistant automatically determines whether to search your uploaded documents (**RAG**), query the analytics database (**SQL**), or combine both (**Hybrid**).
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Latest-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Database-blue?style=for-the-badge)](https://www.trychroma.com/)
+[![Groq](https://img.shields.io/badge/Groq-LLM-black?style=for-the-badge)](https://groq.com/)
+
+[📖 Overview](#-overview) •
+[✨ Features](#-features) •
+[🛠 Tech Stack](#-tech-stack) •
+[🚀 Quick Start](#-quick-start) •
+[📡 API Reference](#-api-reference) •
+[📂 Project Structure](#-project-structure)
+
+</div>
+
+---
+
+# 📖 Overview
+
+The **Conversational Analytics Agent** enables users to interact with both structured databases and unstructured documents using plain English.
+
+Simply ask a question—the AI automatically determines whether to:
+
+- 📄 Search uploaded documents using **Retrieval-Augmented Generation (RAG)**
+- 🗄 Query the analytics database using **Text-to-SQL**
+- 🔀 Combine both approaches through **Hybrid Retrieval**
+
+No manual mode selection is required.
 
 ---
 
 # ✨ Features
 
+## 🤖 Intelligent Query Routing
+
 | Mode | Description |
 |------|-------------|
-| **RAG** | Searches uploaded PDF, CSV, and TXT files using Retrieval-Augmented Generation |
-| **SQL** | Converts natural language into SQL and queries the analytics database |
-| **Hybrid** | Combines document retrieval and SQL queries into a single response |
-
-No mode selection required—the AI routes your question automatically.
+| **RAG** | Searches uploaded PDF, CSV, and TXT documents |
+| **SQL** | Converts natural language into SQL queries |
+| **Hybrid** | Combines document retrieval and SQL results |
 
 ---
 
-# 📋 Requirements
+## 📂 Document Intelligence
 
-- Python **3.10+**
-- Node.js **18+**
-- Free **Groq API Key**
+- ✅ Upload PDF, CSV and TXT files
+- ✅ Automatic document chunking
+- ✅ Local vector embeddings
+- ✅ Semantic search with ChromaDB
+- ✅ Source-aware responses
 
-Get your API key here:
+---
+
+## 🗄 Database Analytics
+
+- Natural Language → SQL
+- Automatic schema understanding
+- SQLite analytics database
+- SQL safety guardrails
+- Read-only query execution
+
+---
+
+## 💬 Chat Experience
+
+- Multi-session conversations
+- Context-aware responses
+- Automatic routing between RAG & SQL
+- Conversation history
+- One-click new conversation
+
+---
+
+# 🛠 Tech Stack
+
+<table>
+<tr>
+
+<td width="33%" valign="top">
+
+### Backend
+
+- 🐍 Python 3.10+
+- ⚡ FastAPI
+- 🔐 Pydantic
+- 🗃 SQLite
+- 🔄 SQLAlchemy
+
+</td>
+
+<td width="33%" valign="top">
+
+### Frontend
+
+- ⚛ React 18
+- ⚡ Vite
+- 🎨 Modern UI
+- 🌐 REST API
+- 💬 Chat Interface
+
+</td>
+
+<td width="33%" valign="top">
+
+### AI Stack
+
+- 🤖 Groq LLM
+- 📄 RAG Pipeline
+- 🧠 ChromaDB
+- 🔍 Text-to-SQL
+- 📚 Local Embeddings
+
+</td>
+
+</tr>
+</table>
+
+---
+
+# 🚀 Quick Start
+
+## Requirements
+
+| Tool | Version |
+|------|---------|
+| Python | 3.10+ |
+| Node.js | 18+ |
+| Groq API Key | Required |
+
+Create a free API key:
 
 https://console.groq.com
 
 ---
 
-# 🚀 Backend Setup
-
-Open a terminal and run the following commands **one by one**.
+# 🔧 Backend Setup
 
 ```powershell
-# Navigate to backend
 cd f:\Gagan\PROJECTS\Sage\conversational-analytics-agent\backend
 
-# Create a virtual environment (first time only)
 python -m venv .venv
 
-# Activate the environment
 .venv\Scripts\Activate.ps1
 
-# Install dependencies
 pip install -r requirements.txt
 ```
 
 ---
 
-## Configure the API Key
+## Configure Environment Variables
 
 Open:
 
@@ -59,13 +163,11 @@ Open:
 backend\.env
 ```
 
-Set your Groq API key:
+Set your Groq API key.
 
 ```env
 GROQ_API_KEY=your_actual_groq_key_here
 ```
-
-> Your API key begins with **`gsk_`**.
 
 Leave this blank:
 
@@ -73,13 +175,11 @@ Leave this blank:
 OPENAI_API_KEY=
 ```
 
-The application automatically uses **local embeddings**.
+The application automatically uses local embeddings.
 
 ---
 
-## Start the Backend
-
-With the virtual environment activated:
+## Start Backend
 
 ```powershell
 uvicorn main:app --reload --port 8000
@@ -91,37 +191,38 @@ Expected output:
 INFO | __main__ | 🚀 Starting Conversational Analytics Agent SAGA...
 INFO | __main__ | SQLite DB found at: ./data/analytics.db
 INFO | __main__ | ChromaDB ready — 0 documents in collection
-INFO:     Uvicorn running on http://127.0.0.1:8000
+INFO | Uvicorn running on http://127.0.0.1:8000
 ```
 
-✅ Keep this terminal running.
+Backend URL:
+
+```
+http://localhost:8000
+```
+
+API Docs:
+
+```
+http://localhost:8000/docs
+```
+
+Keep this terminal running.
 
 ---
 
 # 🎨 Frontend Setup
 
-Open a **second terminal**.
+Open another terminal.
 
 ```powershell
-# Navigate to frontend
 cd f:\Gagan\PROJECTS\Sage\conversational-analytics-agent\frontend
 
-# Install dependencies
 npm install
 
-# Start the development server
 npm run dev
 ```
 
-Expected output:
-
-```text
-VITE v6.x ready
-
-➜ Local: http://localhost:5173/
-```
-
-Open your browser:
+Open:
 
 ```
 http://localhost:5173
@@ -129,43 +230,55 @@ http://localhost:5173
 
 ---
 
-# 💬 How to Use
+# 💬 Usage
 
-## Query the Analytics Database
-
-The application includes a pre-seeded analytics database.
+## 🗄 Query the Database
 
 Example questions:
 
-- "How many customers are on the Pro plan?"
-- "Show revenue by region for completed orders."
-- "Which customers churned last month?"
+- How many customers are on the Pro plan?
+- Show revenue by region for completed orders.
+- Which customers churned last month?
 
 ---
 
-## Query Your Documents
+## 📄 Query Documents
 
 1. Click **Upload Documents**
-2. Upload a PDF, CSV, or TXT file
-3. Wait for the **✓ Ingested** confirmation
-4. Ask questions such as:
+2. Upload PDF, CSV or TXT files
+3. Wait for **✓ Ingested**
+4. Ask questions like:
 
-- "What is the refund policy?"
-- "Summarise the key points in the report."
+- What is the refund policy?
+- Summarise the key points in the report.
 
 ---
 
-## Start a New Conversation
+## ✨ Start a New Conversation
 
-Click **✦ New Conversation** in the sidebar to clear the chat history and begin a fresh session.
+Click **✦ New Conversation** from the sidebar to clear chat history and begin a fresh session.
+
+---
+
+# 📡 API Reference
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/health` | Backend health check |
+| POST | `/chat` | Main conversational endpoint |
+| POST | `/rag/ingest` | Upload documents |
+| POST | `/rag/query` | Query uploaded documents |
+| POST | `/sql/query` | Query analytics database |
+| GET | `/sql/schema` | View database schema |
+| DELETE | `/chat/{session_id}` | Clear chat memory |
 
 ---
 
 # 🛠 Troubleshooting
 
-## Backend Offline
+### Backend Offline
 
-If the frontend displays **"Backend Offline"**, ensure the backend is running.
+Start the backend again.
 
 ```powershell
 uvicorn main:app --reload --port 8000
@@ -173,19 +286,9 @@ uvicorn main:app --reload --port 8000
 
 ---
 
-## pip install Fails
+### pip install Failed
 
-Verify that your virtual environment is activated.
-
-You should see:
-
-```text
-(.venv)
-```
-
-at the beginning of the terminal prompt.
-
-If not, activate it:
+Activate the virtual environment.
 
 ```powershell
 .venv\Scripts\Activate.ps1
@@ -193,42 +296,40 @@ If not, activate it:
 
 ---
 
-## Model Not Found
+### Model Not Found
 
-Check that:
+Verify that:
 
-```
-backend\.env
+```env
+GROQ_API_KEY=
 ```
 
 contains a valid Groq API key.
 
-Example:
+---
 
-```env
-GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxxxxxxx
+### ChromaDB / Embedding Errors
+
+On the first upload, the application downloads the
+
+```
+all-MiniLM-L6-v2
 ```
 
----
+embedding model (~90 MB).
 
-## Embedding / ChromaDB Errors
-
-During the first document upload, the application downloads the **all-MiniLM-L6-v2** embedding model (~90 MB) from Hugging Face.
-
-This happens only once.
-
-Wait for the download to finish and retry the upload.
+Wait for the download to complete before retrying.
 
 ---
 
-# 📁 Project Structure
+# 📂 Project Structure
 
 ```text
 conversational-analytics-agent/
 ├── backend/
-│   ├── main.py              ← FastAPI application
-│   ├── config.py            ← Environment configuration
-│   ├── .env                 ← API keys (never commit)
+│   ├── main.py
+│   ├── config.py
+│   ├── .env
 │   ├── requirements.txt
 │   │
 │   ├── rag/
@@ -261,25 +362,19 @@ conversational-analytics-agent/
 
 ---
 
-# 🌐 API Endpoints
-
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| **GET** | `/health` | Backend health check |
-| **POST** | `/chat` | Main conversational endpoint |
-| **POST** | `/rag/ingest` | Upload and ingest documents |
-| **POST** | `/rag/query` | Query uploaded documents |
-| **POST** | `/sql/query` | Query the analytics database |
-| **GET** | `/sql/schema` | Retrieve database schema |
-| **DELETE** | `/chat/{session_id}` | Clear conversation history |
-
----
-
-# 📖 API Documentation
-
-Interactive API documentation is available at:
+# 📖 Interactive API Documentation
 
 ```
 http://localhost:8000/docs
 ```
+
+---
+
+<div align="center">
+
+Built with ❤️ using FastAPI, React, Groq, ChromaDB and SQLite.
+
+⭐ If you found this project useful, consider giving it a star!
+
+</div>
 ````
